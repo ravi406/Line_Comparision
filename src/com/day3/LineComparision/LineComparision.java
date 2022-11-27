@@ -36,10 +36,12 @@ public class LineComparision {
 		System.out.println("Length of a line : " + lineLength2);
 		String str2 = Double.toString(lineLength2);
 
-		if (str1.equals(str2)) {
-			System.out.println("Both lines are EQUAL ");
+		if (str1.compareTo(str2) == 1) {
+			System.out.println("Length of Line 1 is greater than Line 2 ");
+		} else if (str1.compareTo(str2) == -1) {
+			System.out.println("Length of Line 1 is less than Line 2 ");
 		} else
-			System.out.println("Both lines are Not EQUAL ");
+			System.out.println("Both lines are equal in length");
 
 		scanner.close();
 
